@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Bulky.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Bulky.Data;
 
@@ -8,5 +9,7 @@ public class ApplicationDbContext : DbContext
     {
         
     }
+
+    public DbSet<Category> Categories { get; set; }
 }
 
