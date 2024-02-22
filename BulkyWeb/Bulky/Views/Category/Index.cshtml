@@ -1,5 +1,25 @@
-﻿@{
-    ViewData["Title"] = "Categoryasd";
-}
+﻿@model List<Category>
 
-<h6>THESE ARE THE CATEGORIES</h6>
+<h2>Category List</h2>    
+<table class="table table-bordered table-striped text-sm-center" data-bs-theme="dark">
+    <thead>
+        <tr>
+            <th class="text-info text-bg-secondary">
+                Category Name
+            </th>
+            <th class="text-info text-bg-secondary">
+                Display Order
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.OrderBy(u => u.DisplayOrder))
+        {
+            <tr>
+                <td>@obj.Name</td>
+                <td>@obj.DisplayOrder</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
