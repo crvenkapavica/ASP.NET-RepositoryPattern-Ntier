@@ -12620,3 +12620,12 @@ body {
 .offcanvas .text-muted {
   color: rgba(255, 255, 255, 0.7) !important;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
