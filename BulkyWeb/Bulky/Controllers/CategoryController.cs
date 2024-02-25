@@ -25,6 +25,16 @@ public class CategoryController : Controller
     [HttpPost]
     public IActionResult Create(Category category)
     {
+        if (category.Name == category.DisplayOrder.ToString())
+        {
+            ModelState.AddModelError("Name", "Display Order cannot match the name.");
+        }
+
+        if (string.IsNullOrWhiteSpace(category.DisplayOrder.ToString()))
+        {
+            ModelState.AddModelError("DisplayOrder", "Value cannot be empty.");
+        }
+        
         if (!ModelState.IsValid) return View();
         
         _db.Categories.Add(category);   

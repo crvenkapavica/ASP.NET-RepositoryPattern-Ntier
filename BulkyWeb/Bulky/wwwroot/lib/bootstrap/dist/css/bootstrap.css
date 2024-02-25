@@ -52,6 +52,7 @@
   --bs-danger-rgb: 253, 126, 20;
   --bs-light-rgb: 233, 233, 232;
   --bs-dark-rgb: 33, 37, 41;
+  --bs-error-rgb: 255, 0, 0;
   --bs-primary-text-emphasis: #5d1434;
   --bs-secondary-text-emphasis: rgba(36, 36, 36, 0.76);
   --bs-success-text-emphasis: #1a5643;
