@@ -15,5 +15,5 @@ public class Category
     
     [DisplayName("Display Order")]
     [Range(1, 100, ErrorMessage = "Value must be inside the range 1-100")]
-    public int DisplayOrder { get; set; }
+    public int? DisplayOrder { get; set; }
 }
