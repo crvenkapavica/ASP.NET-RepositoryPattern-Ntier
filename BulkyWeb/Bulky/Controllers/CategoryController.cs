@@ -1,4 +1,6 @@
-﻿using Bulky.Data;
+﻿using Bulky.Controllers;
+using Bulky.DataAccess.Data;
+using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,20 +8,19 @@ namespace Bulky.Controllers;
 
 public class CategoryController : Controller
 {
-    private readonly ApplicationDbContext _db;
-    public CategoryController(ApplicationDbContext db)
+    private readonly IUnitOfWork _unitOfWork;
+    public CategoryController(IUnitOfWork unitOfWork)
     {
-        _db = db;
+        _unitOfWork = unitOfWork;
     }
     
     public IActionResult Index()
     {
-        var categories = _db.Categories.ToList();
-        return View(categories);
+        return View(_unitOfWork.Category.GetAll().ToList());
     }
 
     public IActionResult Create()
-    {
+    {       
         return View();
     }
 
@@ -43,15 +44,16 @@ public class CategoryController : Controller
         
         if (!ModelState.IsValid) return View();
         
-        _db.Categories.Add(category);   
-        _db.SaveChanges();
+        _unitOfWork.Category.Add(category);   
+        _unitOfWork.Save();
         TempData["success"] = "Category created successfully!";
         return RedirectToAction("Index");
     }
     
     public IActionResult Edit(string name)
     {
-        return View(_db.Categories.FirstOrDefault(c => c.Name == name) ?? throw new InvalidOperationException("Category ID not found!"));
+        return View(_unitOfWork.Category.Get(c => c.Name == name) 
+                    ?? throw new InvalidOperationException("Category ID not found!"));
     }
 
     [HttpPost]
@@ -59,16 +61,17 @@ public class CategoryController : Controller
     {
         if (!ModelState.IsValid) return View();
         
-        _db.Categories.Update(category);   
-        _db.SaveChanges();
+        _unitOfWork.Category.Update(category);   
+        _unitOfWork.Save();       
         TempData["success"] = "Category updated!";
         return RedirectToAction("Index");
     }
 
     public IActionResult Delete(int id) 
     {
-        _db.Categories.Remove(_db.Categories.Find(id) ?? throw new InvalidOperationException("Category Not Found!"));
-        _db.SaveChanges();
+        _unitOfWork.Category.Remove(_unitOfWork.Category.Get(c => c.Id == id) 
+                             ?? throw new InvalidOperationException("Category Not Found!"));
+        _unitOfWork.Save();
         TempData["success"] = "Category deleted!";
         return RedirectToAction("Index");
     }

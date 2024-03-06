@@ -1,0 +1,12 @@
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\bin\Debug\net9.0\Bulky.Utility.deps.json
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\bin\Debug\net9.0\Bulky.Utility.dll
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\bin\Debug\net9.0\Bulky.Utility.pdb
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.GeneratedMSBuildEditorConfig.editorconfig
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.AssemblyInfoInputs.cache
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.AssemblyInfo.cs
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.csproj.CoreCompileInputs.cache
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.sourcelink.json
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.dll
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\refint\Bulky.Utility.dll
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.pdb
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\ref\Bulky.Utility.dll

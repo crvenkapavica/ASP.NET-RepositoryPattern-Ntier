@@ -26,8 +26,8 @@
         @foreach (var category in Model.OrderBy(c => c.DisplayOrder))
         {
             <tr>
-                <td style="color: darkkhaki">@category.Name</td>
-                <td style="color: darkkhaki">@category.DisplayOrder</td>
+                <td class="pt-2" style="color: darkkhaki">@category.Name</td>
+                <td class="pt-2" style="color: darkkhaki">@category.DisplayOrder</td>
                 <td style="width: 15%">
                     <a asp-action="Edit" asp-route-name="@category.Name" class="btn btn-secondary me-2">
                         <i class="bi bi-pencil-square"></i>
