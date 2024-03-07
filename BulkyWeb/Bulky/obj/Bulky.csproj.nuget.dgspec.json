@@ -285,6 +285,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0-preview.1.24081.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0-preview.1.24112.3, )"
             }
           },
           "imports": [

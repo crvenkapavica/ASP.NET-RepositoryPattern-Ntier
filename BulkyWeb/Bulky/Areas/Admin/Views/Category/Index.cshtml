@@ -1,0 +1,43 @@
+﻿@model List<Bulky.Models.Category>
+<div class="container col">
+    <div class="row pt-3">
+        <div class="col-6">
+            <h2 class="pt-0" style="color: honeydew; font-family: 'Liberation Mono'">CATEGORY LIST</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-patch-plus-fill"></i> Create New Category
+            </a>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped text-sm-center" data-bs-theme="dark">
+        <thead style="line-height: 33px">
+        <tr>
+            <th class="text-info text-bg-secondary">
+                Category Name
+            </th>
+            <th class="text-info text-bg-secondary">
+                Display Order
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var category in Model.OrderBy(c => c.DisplayOrder))
+        {
+            <tr>
+                <td class="pt-2" style="color: darkkhaki">@category.Name</td>
+                <td class="pt-2" style="color: darkkhaki">@category.DisplayOrder</td>
+                <td style="width: 15%">
+                    <a asp-action="Edit" asp-route-name="@category.Name" class="btn btn-secondary me-2">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@category.Id" class="btn btn-danger">
+                        <i class="bi bi-trash3"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
