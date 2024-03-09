@@ -59,6 +59,18 @@
           }
         }
       },
+      "Messaia.Net.Mvc.Rendering/8.1.0-rc06": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Messaia.Net.Mvc.Rendering.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Messaia.Net.Mvc.Rendering.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "compile": {
@@ -1583,6 +1595,18 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Messaia.Net.Mvc.Rendering/8.1.0-rc06": {
+      "sha512": "75E4y/1cZQGgBNixMBmDZgMHnRHcuq7OSZHEzzBiDDW3rqoNkXwUQfta860n20NjQsraeSI8xrfxS7nuy+0g0g==",
+      "type": "package",
+      "path": "messaia.net.mvc.rendering/8.1.0-rc06",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/Messaia.Net.Mvc.Rendering.dll",
+        "messaia.net.mvc.rendering.8.1.0-rc06.nupkg.sha512",
+        "messaia.net.mvc.rendering.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -4091,6 +4115,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Messaia.Net.Mvc.Rendering >= 8.1.0-rc06",
       "Microsoft.EntityFrameworkCore >= 9.0.0-preview.1.24081.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0-preview.1.24081.2",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-preview.1.24081.2"
@@ -4145,6 +4170,10 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "Messaia.Net.Mvc.Rendering": {
+            "target": "Package",
+            "version": "[8.1.0-rc06, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[9.0.0-preview.1.24081.2, )"

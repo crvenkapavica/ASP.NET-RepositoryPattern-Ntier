@@ -1,6 +1,9 @@
-﻿using Bulky.DataAccess.Repository.IRepository;
+﻿using System.Collections;
+using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
+using Bulky.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Bulky.Areas.Admin.Controllers;
@@ -22,6 +25,14 @@ public class ProductController : Controller
 
     public IActionResult Create()
     {
+        
+        
+        ProductViewModel VM = new()
+        {
+            CategoryList = CategoryList,
+            Product = new Product()
+        };
+        
         return View();
     }
 
@@ -31,7 +42,7 @@ public class ProductController : Controller
         if (_unitOfWork.Product.Get(e => e.ISBN == product.ISBN) != null)
             ModelState.AddModelError("ISBN", "Product cannot contain the same ISBN!");
 
-        //if (!ModelState.IsValid) return View();
+        if (!ModelState.IsValid) return View();
         
         _unitOfWork.Product.Add(product);
         _unitOfWork.Save();
@@ -48,7 +59,7 @@ public class ProductController : Controller
     [HttpPost]
     public IActionResult Edit(Product product)
     {
-        //if (!ModelState.IsValid) return View();
+        if (!ModelState.IsValid) return View();
         
         _unitOfWork.Product.Update(product);
         _unitOfWork.Save();

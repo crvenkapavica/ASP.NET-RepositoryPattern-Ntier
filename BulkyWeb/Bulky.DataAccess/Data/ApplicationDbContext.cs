@@ -27,6 +27,7 @@ public class ApplicationDbContext : DbContext
             new Product
             {
                 Id = 1,
+                CategoryId = 2,
                 Title = "Fortune of Time",
                 Author = "Billy Spark",
                 Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -34,11 +35,13 @@ public class ApplicationDbContext : DbContext
                 ListPrice = 99,
                 Price = 90,
                 Price50 = 85,
-                Price100 = 80
+                Price100 = 80,
+                ImageUrl = ""
             },
             new Product
             {
                 Id = 2,
+                CategoryId = 5,
                 Title = "Dark Skies",
                 Author = "Nancy Hoover",
                 Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -46,11 +49,13 @@ public class ApplicationDbContext : DbContext
                 ListPrice = 40,
                 Price = 30,
                 Price50 = 25,
-                Price100 = 20
+                Price100 = 20,
+                ImageUrl = ""
             },
             new Product
             {
                 Id = 3,
+                CategoryId = 2,
                 Title = "Vanish in the Sunset",
                 Author = "Julian Button",
                 Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -58,11 +63,13 @@ public class ApplicationDbContext : DbContext
                 ListPrice = 55,
                 Price = 50,
                 Price50 = 40,
-                Price100 = 35
+                Price100 = 35,
+                ImageUrl = ""
             },
             new Product
             {
                 Id = 4,
+                CategoryId = 16,
                 Title = "Cotton Candy",
                 Author = "Abby Muscles",
                 Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -70,11 +77,13 @@ public class ApplicationDbContext : DbContext
                 ListPrice = 70,
                 Price = 65,
                 Price50 = 60,
-                Price100 = 55
+                Price100 = 55,
+                ImageUrl = ""
             },
             new Product
             {
                 Id = 5,
+                CategoryId = 16,
                 Title = "Rock in the Ocean",
                 Author = "Ron Parker",
                 Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -82,11 +91,13 @@ public class ApplicationDbContext : DbContext
                 ListPrice = 30,
                 Price = 27,
                 Price50 = 25,
-                Price100 = 20
+                Price100 = 20,
+                ImageUrl = ""
             },
             new Product
             {
                 Id = 6,
+                CategoryId = 16,
                 Title = "Leaves and Wonders",
                 Author = "Laura Phantom",
                 Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -94,7 +105,8 @@ public class ApplicationDbContext : DbContext
                 ListPrice = 25,
                 Price = 23,
                 Price50 = 22,
-                Price100 = 20
+                Price100 = 20,
+                ImageUrl = ""
             }
         );
     }

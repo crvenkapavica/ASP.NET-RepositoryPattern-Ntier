@@ -136,6 +136,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Messaia.Net.Mvc.Rendering": {
+              "target": "Package",
+              "version": "[8.1.0-rc06, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0-preview.1.24081.2, )"

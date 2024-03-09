@@ -1,6 +1,7 @@
 ﻿using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Bulky.Areas.Admin.Controllers;
 
@@ -19,7 +20,7 @@ public class CategoryController : Controller
     }
 
     public IActionResult Create()
-    {       
+    {
         return View();
     }
 
