@@ -2482,6 +2482,10 @@
         }
       },
       "Bulky.Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0-preview.1.24081.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0-preview.1.24081.2"
+        },
         "runtime": {
           "Bulky.Models.dll": {}
         },
@@ -2490,6 +2494,10 @@
         }
       },
       "Bulky.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.0-preview.1.24081.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0-preview.1.24081.2"
+        },
         "runtime": {
           "Bulky.Utility.dll": {}
         },

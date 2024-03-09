@@ -79,7 +79,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: Consolas;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -6871,6 +6871,10 @@ textarea.form-control-lg {
   background-color: RGBA(var(--bs-secondary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-khaki {
+  background-color: darkkhaki !important;
+}
+
 .text-bg-success {
   color: #fff !important;
   background-color: RGBA(var(--bs-success-rgb), var(--bs-bg-opacity, 1)) !important;
@@ -8557,6 +8561,12 @@ textarea.form-control-lg {
 .text-dark {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-khaki {
+  --bs-text-opacity: 1;
+  color: darkkhaki;
+  font-weight: bold;
 }
 
 .text-black {
@@ -12170,16 +12180,17 @@ body {
 .dropdown-menu {
   border: none;
   box-shadow: inset 1px 1px rgba(255, 255, 255, 0.2), inset -1px -1px rgba(255, 255, 255, 0.1), 1px 3px 24px -1px rgba(0, 0, 0, 0.15);
-  background-color: transparent;
-  background-image: linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2) 70%);
+  background-color: rgba(232, 50, 131, 0.55);
+  background-image: linear-gradient(125deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, ) 70%);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
 .dropdown-menu a {
-  color: #fff;
+  color: darkkhaki;
+  font-weight: bold;
 }
 .dropdown-menu .text-muted {
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: #32e84a !important;
 }
 
 .nav-tabs .nav-link {

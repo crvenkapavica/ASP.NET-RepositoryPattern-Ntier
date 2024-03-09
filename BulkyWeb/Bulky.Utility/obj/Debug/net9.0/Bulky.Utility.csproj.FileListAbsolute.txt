@@ -10,3 +10,6 @@ X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Util
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\refint\Bulky.Utility.dll
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.pdb
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\ref\Bulky.Utility.dll
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\bin\Debug\net9.0\Bulky.Utility.runtimeconfig.json
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.csproj.AssemblyReference.cache
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Utility\obj\Debug\net9.0\Bulky.Utility.genruntimeconfig.cache

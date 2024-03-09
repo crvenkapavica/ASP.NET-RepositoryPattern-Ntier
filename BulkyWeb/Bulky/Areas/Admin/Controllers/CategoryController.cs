@@ -45,7 +45,8 @@ public class CategoryController : Controller
         
         _unitOfWork.Category.Add(category);   
         _unitOfWork.Save();
-        TempData["success"] = "Category created successfully!";
+        TempData["success"] = "Category created!";
+        
         return RedirectToAction("Index");
     }
     
@@ -60,9 +61,10 @@ public class CategoryController : Controller
     {
         if (!ModelState.IsValid) return View();
         
-        _unitOfWork.Category.Update(category);   
-        _unitOfWork.Save();       
-        TempData["success"] = "Category updated!";
+        _unitOfWork.Category.Update(category);
+        _unitOfWork.Save();
+        TempData["success"] = "Category updated.";
+        
         return RedirectToAction("Index");
     }
 
@@ -71,7 +73,8 @@ public class CategoryController : Controller
         _unitOfWork.Category.Remove(_unitOfWork.Category.Get(c => c.Id == id) 
                              ?? throw new InvalidOperationException("Category Not Found!"));
         _unitOfWork.Save();
-        TempData["success"] = "Category deleted!";
+        TempData["success"] = "Category deleted.";
+        
         return RedirectToAction("Index");
     }
 }

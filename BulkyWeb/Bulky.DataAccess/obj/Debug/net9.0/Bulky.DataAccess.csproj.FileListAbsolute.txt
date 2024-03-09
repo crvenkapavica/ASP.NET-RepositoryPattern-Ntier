@@ -16,3 +16,5 @@ X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.DataAccess\obj\Debug\net9.0\Bulky.D
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.DataAccess\obj\Debug\net9.0\refint\Bulky.DataAccess.dll
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.DataAccess\obj\Debug\net9.0\Bulky.DataAccess.pdb
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.DataAccess\obj\Debug\net9.0\ref\Bulky.DataAccess.dll
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.DataAccess\bin\Debug\net9.0\Bulky.DataAccess.runtimeconfig.json
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.DataAccess\obj\Debug\net9.0\Bulky.DataAccess.genruntimeconfig.cache

@@ -1,4 +1,4 @@
-﻿@model List<Bulky.Models.Category>
+﻿@model List<Category>
 <div class="container col">
     <div class="row pt-3">
         <div class="col-6">
@@ -13,17 +13,17 @@
     <table class="table table-bordered table-striped text-sm-center" data-bs-theme="dark">
         <thead style="line-height: 33px">
         <tr>
-            <th class="text-info text-bg-secondary">
+            <th class="text-info text-bg-dark">
                 Category Name
             </th>
-            <th class="text-info text-bg-secondary">
+            <th class="text-info text-bg-dark">
                 Display Order
             </th>
             <th></th>
         </tr>
         </thead>
         <tbody>
-        @foreach (var category in Model.OrderBy(c => c.DisplayOrder))
+        @foreach (var category in Model.OrderBy(e => e.DisplayOrder))
         {
             <tr>
                 <td class="pt-2" style="color: darkkhaki">@category.Name</td>
