@@ -13,4 +13,3 @@ X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Models\obj\Debug\net9.0\ref\Bulky.M
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Models\bin\Debug\net9.0\Bulky.Models.runtimeconfig.json
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Models\obj\Debug\net9.0\Bulky.Models.csproj.AssemblyReference.cache
 X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Models\obj\Debug\net9.0\Bulky.Models.genruntimeconfig.cache
-X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\Bulky.Models\obj\Debug\net9.0\Bulky.Models.MvcApplicationPartsAssemblyInfo.cache

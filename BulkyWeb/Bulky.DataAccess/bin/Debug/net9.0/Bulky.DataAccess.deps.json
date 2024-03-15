@@ -451,12 +451,6 @@
       "Microsoft.Extensions.Caching.Abstractions/9.0.0-preview.1.24080.9": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "9.0.0-preview.1.24080.9"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Caching.Abstractions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
         }
       },
       "Microsoft.Extensions.Caching.Memory/9.0.0-preview.1.24080.9": {
@@ -466,44 +460,19 @@
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0-preview.1.24080.9",
           "Microsoft.Extensions.Options": "9.0.0-preview.1.24080.9",
           "Microsoft.Extensions.Primitives": "9.0.0-preview.1.24080.9"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
         }
       },
       "Microsoft.Extensions.Configuration.Abstractions/9.0.0-preview.1.24080.9": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "9.0.0-preview.1.24080.9"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/9.0.0-preview.1.24080.9": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-preview.1.24080.9"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0-preview.1.24080.9": {
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
-        }
-      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0-preview.1.24080.9": {},
       "Microsoft.Extensions.DependencyModel/9.0.0-preview.1.24080.9": {
         "dependencies": {
           "System.Text.Encodings.Web": "9.0.0-preview.1.24080.9",
@@ -521,45 +490,20 @@
           "Microsoft.Extensions.DependencyInjection": "9.0.0-preview.1.24080.9",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0-preview.1.24080.9",
           "Microsoft.Extensions.Options": "9.0.0-preview.1.24080.9"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Logging.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/9.0.0-preview.1.24080.9": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-preview.1.24080.9"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
         }
       },
       "Microsoft.Extensions.Options/9.0.0-preview.1.24080.9": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-preview.1.24080.9",
           "Microsoft.Extensions.Primitives": "9.0.0-preview.1.24080.9"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Options.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
         }
       },
-      "Microsoft.Extensions.Primitives/9.0.0-preview.1.24080.9": {
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.8009"
-          }
-        }
-      },
+      "Microsoft.Extensions.Primitives/9.0.0-preview.1.24080.9": {},
       "Microsoft.Identity.Client/4.56.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Abstractions": "6.24.0"
@@ -823,14 +767,7 @@
           "System.Security.Principal.Windows": "5.0.0"
         }
       },
-      "System.IO.Pipelines/6.0.3": {
-        "runtime": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.522.21309"
-          }
-        }
-      },
+      "System.IO.Pipelines/6.0.3": {},
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
