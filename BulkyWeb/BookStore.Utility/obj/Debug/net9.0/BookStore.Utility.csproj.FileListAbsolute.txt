@@ -1,0 +1,15 @@
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\bin\Debug\net9.0\BookStore.Utility.deps.json
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\bin\Debug\net9.0\BookStore.Utility.runtimeconfig.json
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\bin\Debug\net9.0\BookStore.Utility.dll
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\bin\Debug\net9.0\BookStore.Utility.pdb
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.csproj.AssemblyReference.cache
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.GeneratedMSBuildEditorConfig.editorconfig
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.AssemblyInfoInputs.cache
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.AssemblyInfo.cs
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.csproj.CoreCompileInputs.cache
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.sourcelink.json
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.dll
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\refint\BookStore.Utility.dll
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.pdb
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\BookStore.Utility.genruntimeconfig.cache
+X:\Projects\Repo\ASP.NET-CRUD\BulkyWeb\BookStore.Utility\obj\Debug\net9.0\ref\BookStore.Utility.dll
