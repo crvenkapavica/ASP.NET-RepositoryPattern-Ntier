@@ -7,9 +7,9 @@ public interface IRepository<T>
 {
     void Add(T entity);
     
-    T? Get(Expression<Func<T, bool>> filter);
+    T? Get(Expression<Func<T, bool>> filter, string? includeProperties = null);
     
-    IEnumerable<T> GetAll();
+    IEnumerable<T> GetAll(string? includeProperties = null);
     
     void Remove(T entity);
     

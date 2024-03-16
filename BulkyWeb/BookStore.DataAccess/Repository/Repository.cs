@@ -19,12 +19,12 @@ public abstract class Repository<T> : IRepository<T>
         _dbSet.Add(entity);
     }
     
-    public T? Get(Expression<Func<T, bool>> filter)
+    public T? Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
     {
         return _dbSet.Where(filter).FirstOrDefault();
     }
     
-    public IEnumerable<T> GetAll()
+    public IEnumerable<T> GetAll(string? includeProperties = null)
     {
         return _dbSet.ToList();
     }
