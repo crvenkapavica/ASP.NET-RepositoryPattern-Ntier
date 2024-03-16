@@ -44,14 +44,14 @@ public class ProductController : Controller
     [HttpPost]
     public IActionResult Upsert(ProductViewModel vm, IFormFile? file)
     {
-        if (_unitOfWork.Product.Get(e => e.ISBN == vm.Product.ISBN) != null)
-            ModelState.AddModelError("ISBN", "Product cannot contain the same ISBN!");
+        if (vm.Product.Id == 0 && _unitOfWork.Product.Get(e => e.ISBN == vm.Product.ISBN) != null)
+            ModelState.AddModelError("Product.ISBN", "Product cannot contain the same ISBN!");
         
-        if (_unitOfWork.Product.Get(e => e.Title == vm.Product.Title) != null)
-            ModelState.AddModelError("Title", "Product cannot have the same Title!");
+        if (vm.Product.Id == 0 && _unitOfWork.Product.Get(e => e.Title == vm.Product.Title) != null)
+            ModelState.AddModelError("Product.Title", "Product cannot have the same Title!");
         
         if (file == null)
-            ModelState.AddModelError("ImageUrl", "You have to upload a file!");
+            ModelState.AddModelError("Product.ImageUrl", "You have to upload a file!");
 
         if (!ModelState.IsValid)
         {
@@ -66,10 +66,20 @@ public class ProductController : Controller
                     })
             });
         }
-
+        
         var wwwRootPath = _webHostEnvironment.WebRootPath;
         var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file?.FileName);
         var path = Path.Combine(wwwRootPath, @"images\product");
+        
+        // delete the old image if it exists (if we are updating)
+        if (!string.IsNullOrEmpty(vm.Product.ImageUrl))
+        {
+            var oldPath = Path.Combine(wwwRootPath, vm.Product.ImageUrl.TrimStart('\\'));
+            if (System.IO.File.Exists(oldPath))
+            {
+                System.IO.File.Delete(oldPath);
+            }
+        }
         
         using (var fileStream = new FileStream(Path.Combine(path, fileName), FileMode.Create))
         {
@@ -77,20 +87,39 @@ public class ProductController : Controller
         }
 
         vm.Product.ImageUrl = @"\images\product\" + fileName;
-        
-        _unitOfWork.Product.Add(vm.Product);
+
+        if (vm.Product.Id == 0)
+        {
+            _unitOfWork.Product.Add(vm.Product);
+            TempData["success"] = "Product added!";
+        }
+        else
+        {
+            _unitOfWork.Product.Update(vm.Product);
+            TempData["success"] = "Product updated!";
+        }
         _unitOfWork.Save();
-        TempData["success"] = "Product added!";
 
         return RedirectToAction("Index");
     }
     
     public IActionResult Delete(Product product)
     {
-        _unitOfWork.Product.Remove(product);
-        _unitOfWork.Save();
-        TempData["success"] = "Product deleted.";
+        var selectedProduct = _unitOfWork.Product.Get(e => e.Id == product.Id);
+        if (selectedProduct == null) return RedirectToAction("Index");
         
+        var path = System.IO.Path.Combine(_webHostEnvironment.WebRootPath, selectedProduct.ImageUrl.TrimStart('\\'));
+        
+        if (System.IO.File.Exists(path))
+        {
+            System.IO.File.Delete(path);
+        }
+            
+        _unitOfWork.Product.Remove(selectedProduct);
+        _unitOfWork.Save();
+        
+        TempData["success"] = "Product deleted.";
+
         return RedirectToAction("Index");
     }
 }

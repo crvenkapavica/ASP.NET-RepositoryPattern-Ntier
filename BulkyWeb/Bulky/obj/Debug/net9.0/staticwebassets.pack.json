@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\product\\222b38e0-d276-4249-8577-d0a683668778.jpg"
     },
     {
+      "Id": "X:\\Projects\\Repo\\ASP.NET-CRUD\\BulkyWeb\\Bulky\\wwwroot\\images\\product\\88a73b46-7c90-4c2e-a2c3-f8e75699ecd7.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\88a73b46-7c90-4c2e-a2c3-f8e75699ecd7.jpg"
+    },
+    {
       "Id": "X:\\Projects\\Repo\\ASP.NET-CRUD\\BulkyWeb\\Bulky\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

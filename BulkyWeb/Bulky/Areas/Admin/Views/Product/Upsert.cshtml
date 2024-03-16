@@ -8,6 +8,7 @@
         </div>
         <div class="text-warning" asp-validation-summary="ModelOnly"></div>
         <input asp-for="Product.Id" hidden/>
+        <input asp-for="Product.ImageUrl" hidden/>
         <div class="row">
             <div class="col-10">
                 <div class="mb-3 row" style="padding-left: 0.75rem; padding-right: 0.75rem">
@@ -57,6 +58,7 @@
                 </div>
                 <div class="mb-3 row" style="padding-left: 0.75rem; padding-right: 0.75rem">
                     <input asp-for="Product.ImageUrl" type="file" name="file" class="p-0"/>
+                    <span asp-validation-for="Product.ImageUrl" class="text-warning"></span>
                 </div>
             </div>
             <div class="col-2">

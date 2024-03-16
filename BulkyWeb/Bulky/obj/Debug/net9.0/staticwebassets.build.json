@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NnCGtcxhWALMKzGJjAOSOBLroLBPHvxdmzKdJ7wAyZ8=",
+  "Hash": "pXWI2eqECJZhZVMBeVVXIkFXiR2OCKapdnuiSdob99w=",
   "Source": "Bulky",
   "BasePath": "_content/Bulky",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\222b38e0-d276-4249-8577-d0a683668778.jpg"
+    },
+    {
+      "Identity": "X:\\Projects\\Repo\\ASP.NET-CRUD\\BulkyWeb\\Bulky\\wwwroot\\images\\product\\88a73b46-7c90-4c2e-a2c3-f8e75699ecd7.jpg",
+      "SourceId": "Bulky",
+      "SourceType": "Discovered",
+      "ContentRoot": "X:\\Projects\\Repo\\ASP.NET-CRUD\\BulkyWeb\\Bulky\\wwwroot\\",
+      "BasePath": "_content/Bulky",
+      "RelativePath": "images/product/88a73b46-7c90-4c2e-a2c3-f8e75699ecd7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\88a73b46-7c90-4c2e-a2c3-f8e75699ecd7.jpg"
     },
     {
       "Identity": "X:\\Projects\\Repo\\ASP.NET-CRUD\\BulkyWeb\\Bulky\\wwwroot\\js\\site.js",
