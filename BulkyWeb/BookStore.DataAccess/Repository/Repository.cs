@@ -8,25 +8,38 @@ public abstract class Repository<T> : IRepository<T>
     where T : class
 {
     private readonly DbSet<T> _dbSet;
+    private readonly char[] _separator = { ',' };
 
     protected Repository(DbContext db)
     {
         _dbSet = db.Set<T>();
     }
-    
+
     public void Add(T entity)
     {
         _dbSet.Add(entity);
     }
-    
+
     public T? Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
     {
-        return _dbSet.Where(filter).FirstOrDefault();
+        var query = _dbSet.Where(filter);
+        if (!string.IsNullOrEmpty(includeProperties))
+        {
+            query = includeProperties.Split(_separator, StringSplitOptions.RemoveEmptyEntries)
+                .Aggregate(query, (current, p) => current.Include(p));
+        }
+        return query.FirstOrDefault();
     }
-    
+
     public IEnumerable<T> GetAll(string? includeProperties = null)
     {
-        return _dbSet.ToList();
+        IQueryable<T> query = _dbSet;
+        if (!string.IsNullOrEmpty(includeProperties))
+        {
+            query = includeProperties.Split(_separator, StringSplitOptions.RemoveEmptyEntries)
+                .Aggregate(query, (current, p) => current.Include(p));
+        }
+        return query.ToList();
     }
 
     public void Remove(T entity)

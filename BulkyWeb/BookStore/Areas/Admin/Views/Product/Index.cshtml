@@ -41,7 +41,7 @@
                     </tr>
                     <tr>
                         <td class="text-info">Category</td>
-                        <td>TEMP_CAT</td>
+                        <td style="color: darkkhaki">@product.Category.Name</td>
                     </tr>
                     <tr>
                         <td class="text-info">Price</td>
@@ -66,5 +66,21 @@
                 </table>
             </div>
         }
+        @* <table id="tblData" class="table table-bordered table-striped"> *@
+        @*     <thead> *@
+        @*     <tr> *@
+        @*         <th>Title</th> *@
+        @*         <th>ISBN</th> *@
+        @*         <th>Price</th> *@
+        @*         <th>Author</th> *@
+        @*         <th>Category</th> *@
+        @*     </tr> *@
+        @*     </thead> *@
+        @* </table> *@
     </div>
 </div>
+
+@section Scripts
+{
+    <script src="~/js/product.js"></script>
+}

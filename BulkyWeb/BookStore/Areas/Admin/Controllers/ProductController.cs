@@ -26,7 +26,7 @@ public class ProductController : Controller
 
     public IActionResult Index()
     {
-        return View(_unitOfWork.Product.GetAll().ToList());
+        return View(_unitOfWork.Product.GetAll(includeProperties:"Category").ToList());
     }
 
     public IActionResult Upsert(string? title)
@@ -127,4 +127,14 @@ public class ProductController : Controller
 
         return RedirectToAction("Index");
     }
+
+    #region API CALLS
+
+    [HttpGet]
+    public IActionResult GetAll()
+    {
+        return Json(new { data = _unitOfWork.Product.GetAll(includeProperties: "Category").ToList() });
+    }
+
+    #endregion
 }
