@@ -37,10 +37,6 @@
       "PackagePath": "staticwebassets\\images\\product\\d1d0f3ea-0308-4b27-852a-b83ef018318f.jpg"
     },
     {
-      "Id": "X:\\Projects\\Repo\\ASP.NET-CRUD\\BulkyWeb\\BookStore\\wwwroot\\images\\product\\ef214e45-ff13-4ec7-8d09-2ad4242db8cb.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\ef214e45-ff13-4ec7-8d09-2ad4242db8cb.jpg"
-    },
-    {
       "Id": "X:\\Projects\\Repo\\ASP.NET-CRUD\\BulkyWeb\\BookStore\\wwwroot\\js\\product.js",
       "PackagePath": "staticwebassets\\js\\product.js"
     },
